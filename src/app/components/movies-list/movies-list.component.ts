@@ -3,7 +3,7 @@ import {Store} from '@ngrx/store';
 import {Movie} from '../../store/movies/movies.model';
 import {Observable} from 'rxjs';
 import {removeMovieDetails, showMovieDetails} from '../../store/movies/movies.actions';
-import {selectModalMovie, selectMovies} from '../../store/movies/movies.selectors';
+import {selectFilteredMovies, selectModalMovie} from '../../store/movies/movies.selectors';
 
 @Component({
   selector: 'app-movies-list',
@@ -18,7 +18,7 @@ export class MoviesListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.movies = this.store.select<Movie[]>(selectMovies);
+    this.movies = this.store.select<Movie[]>(selectFilteredMovies);
     this.modalMovie = this.store.select<Movie>(selectModalMovie);
   }
 

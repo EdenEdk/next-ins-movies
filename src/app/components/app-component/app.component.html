@@ -1,5 +1,6 @@
 <div class="app-header">Eden Katabi Movies</div>
 <div class="content-container">
   <span class="content-title">EXPLORE YOUR NEXT MOVIES AND TV SHOWS</span>
+  <input class="search-bar" placeholder="Search By Film Name" (input)="setSearch($event.target.value)"/>
   <app-movies-list></app-movies-list>
 </div>

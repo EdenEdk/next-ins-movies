@@ -11,13 +11,22 @@
 
 .content-container {
   display: grid;
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: 100px 50px 1fr;
   background-color: #00d7ff;
   overflow-y: auto;
+}
+
+.search-bar {
+  width: 50%;
+  font-size: 25px;
+  justify-self: center;
+  border-radius: 10px;
+  outline: none;
 }
 
 .content-title {
   justify-self: center;
   font-size: 40px;
   font-weight: bolder;
+  align-self: center;
 }

@@ -9,7 +9,7 @@
               <span class="title">{{modalMovie.title}}</span>
               <span>{{modalMovie.runtime}}</span>
             </span>
-            <span *ngIf="modalMovie.rating" class="movie-rating">{{modalMovie.rating}}</span>
+            <span *ngIf="modalMovie.rating" class="movie-rating">{{modalMovie.rating}}/10</span>
           </span>
           <span class="movie-desc">{{modalMovie.synopsis | movieDesc}}</span>
           <span class="close-modal-button" (click)="hideChildModal()">Back To List</span>
