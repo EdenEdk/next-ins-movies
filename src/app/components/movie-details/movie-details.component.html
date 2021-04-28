@@ -1,0 +1,20 @@
+<div bsModal #childModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dialog-child-name">
+  <div class="modal-container">
+    <div class="modal-content">
+      <div class="modal-body movie-modal-body">
+        <img [src]="modalMovie.image"/>
+        <div class="movie-details">
+          <span class="movie-detailed-title">
+            <span class="title-runtime">
+              <span class="title">{{modalMovie.title}}</span>
+              <span>{{modalMovie.runtime}}</span>
+            </span>
+            <span *ngIf="modalMovie.rating" class="movie-rating">{{modalMovie.rating}}</span>
+          </span>
+          <span class="movie-desc">{{modalMovie.synopsis | movieDesc}}</span>
+          <span class="close-modal-button" (click)="hideChildModal()">Back To List</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

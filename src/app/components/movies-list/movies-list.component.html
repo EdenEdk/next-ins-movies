@@ -1,0 +1,4 @@
+<app-movie-display *ngFor="let movie of movies | async"
+                   [movie]="movie"
+                   (movieClicked)="displayMovieDetails($event)"></app-movie-display>
+<app-movie-details *ngIf="modalMovie | async as movie" [modalMovie]="movie" (modalClosed)="deleteMovieDetails($event)"></app-movie-details>

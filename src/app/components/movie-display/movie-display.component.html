@@ -1,0 +1,5 @@
+<div class="movie-display">
+  <img [src]="movie.image">
+  <span class="movie-title">{{movie.title}} ({{movie.released}})</span>
+  <span class="read-more" (click)="displayMovieDetails()">Read More</span>
+</div>

@@ -1,0 +1,21 @@
+.movie-display {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.movie-title {
+  height: 65px;
+}
+
+.read-more {
+  border: 1px solid black;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.read-more:active {
+  transform: translateY(2px);
+}
